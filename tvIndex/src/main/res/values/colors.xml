@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="color_orange1">#EE7600</color>
+    <color name="color_orange2">#EE7942</color>
+    <color name="color_orange3">#EE9572</color>
+
+
+    <color name="quyu">#FF20142B</color>
+    <color name="text_ys">#FFAB67FC</color>
+
+    <color name="time_bg">#FF1E122A</color>
+
+    <color name="text_xx">#FF999999</color>
+
+    <color name="rb_bg_wxz">#FF191919</color>
+
+    <color name="rb_bg_xz">#FF121212</color>
+
+    <color name="item_bg">#FF170E21</color>
+
+
+
+    <color name="gray">#E8E8E8</color>
+
+    <color name="nav_font_color">#7f8699</color>
+    <color name="nav_font_color_selected">#e33e4c</color>
+
+    <color name="div_white">#E5E5E5</color>
+
+    <color name="black">#000000</color>
+    
+    <!--立即体验的颜色-->
+    <color name="enjoy">#8d6e9c</color>
+
+
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="red">#FF0000</color>
+
+
+    <!--新手指引-->
+    <color name="transparent">#00000000</color>
+    <color name="shadow">#cc222222</color>
+
+
+    <color name="black_notdark">#454545</color>
+
+    <!--关于 fontawesome背景色-->
+    <color name="help_fontawesomt_bg">#6071B8</color>
+    <color name="about_fontawesomt_bg">#FF4B51</color>
+
+    <!--标题栏颜色-->
+    <color name="navbackground_color">#FF1A1125</color>
+
+
+    <color name="white_bg">#ffffff</color>
+
+    <color name="white_a">#a0ffffff</color>
+
+
+    <!--退出登录的背景颜色和文字颜色-->
+    <color name="login_out_bg">#f0f0f0</color>
+    <color name="login_out_tx">#e6543d</color>
+
+    <!--transparent-->
+    <color name="container_background">#fbfbfb</color>
+    <color name="primary_text_white">#deffffff</color>
+    <color name="primary_text">#de000000</color>
+    <color name="grey">#eeeeee</color>
+
+    <!--tabhost 右侧图标颜色-->
+    <color name="tabhost_right">#84899f</color>
+
+    <!--localtabhost 右侧图标颜色-->
+    <color name="localtabhost_right">#84899f</color>
+
+    <!--tab底部颜色值-->
+    <color name="tabhost_bottom">#ececee</color>
+
+
+    <!--图标未选中颜色-->
+    <color name="tab_unselected">#7f8699</color>
+    <!--图标选中颜色-->
+    <color name="tab_selected">#e33e4c</color>
+    <color name="slide_menu">#84899f</color>
+
+    <color name="white">#ffffff</color>
+
+    <color name="text_content">#c1c1c1</color>
+    <color name="text_tab">#b4b4b4</color>
+
+    <color name="line1">#FF2D1F3F</color>
+
+    <color name="dia_bg">#FF1F132A</color>
+
+</resources>

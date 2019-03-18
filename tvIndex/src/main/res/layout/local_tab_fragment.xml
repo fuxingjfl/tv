@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/local_swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <com.starv.tvindex.util.view.ProgressWebView
+                android:id="@+id/local_webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                >
+            </com.starv.tvindex.util.view.ProgressWebView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <!--<com.satrv.tvindex.util.view.ProgressWebView-->
+        <!--android:id="@+id/webview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:scrollbars="none"-->
+        <!--&gt;-->
+    <!--</com.satrv.tvindex.util.view.ProgressWebView>-->
+    <ProgressBar
+        android:id="@+id/local_custom_progressbar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:indeterminate="false" />
+
+    <RelativeLayout
+        android:id="@+id/id_load_error_ui"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <include
+            layout="@layout/load_error"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

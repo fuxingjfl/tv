@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_bj"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="关注更多资讯"
+            android:layout_marginBottom="20dp"
+            android:textSize="@dimen/text_size28px"/>
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@mipmap/ewm"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="W  W  W  .  S  T  A  R  -  V  . C  O  M  .  C  N\n0    2    1     -     5    4    2    6    2    0    1    1\n上海市杨浦区政府路18号波司登大厦1406室\n上  海  星  红  安  数  据  科  技  有  限  公  司"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:lineSpacingExtra="5dp"
+            android:textSize="13sp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:src="@mipmap/bg_db"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

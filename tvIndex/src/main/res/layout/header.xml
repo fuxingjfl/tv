@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
+    xmlns:iconF="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_header"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/title_style"
+    >
+
+    <!-- 左图标 -->
+    <com.starv.tvindex.util.view.IconView
+        android:id="@+id/id_lefticon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/tabhost_right"
+        android:visibility="gone"
+        iconF:iconType="xha_font"
+        android:text="@string/back_icon"/>
+    <ImageView
+        android:id="@+id/id_leftTitle"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:src="@mipmap/header_logo"/>
+    <!-- 标题栏题目 -->
+    <TextView
+        android:id="@+id/id_header_title"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:visibility="gone"
+
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:scrollHorizontally="true"
+
+        android:text="未知标题"/>
+
+
+    <!-- 右图标1 -->
+    <com.starv.tvindex.util.view.IconView
+        android:id="@+id/id_righticon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerInParent="true"
+        android:textSize="18sp"
+        android:textColor="@color/tabhost_right"
+        android:visibility="gone"
+        iconF:iconType="xha_font"
+        android:text="@string/area_data"/>
+    <!-- 右图标1 -->
+    <com.starv.tvindex.util.view.IconView
+        android:id="@+id/id_righticon_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/id_righticon"
+        android:layout_centerInParent="true"
+        android:textSize="18sp"
+        android:textColor="@color/tabhost_right"
+        android:visibility="gone"
+        iconF:iconType="xha_font"
+        android:text="@string/share_icon"/>
+    <ImageView
+        android:id="@+id/id_rightTitle"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:src="@mipmap/header_logo"/>
+
+
+</RelativeLayout>

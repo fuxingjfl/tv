@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="iconFont">
+        <attr name="iconType" format="enum">
+            <enum name="xha_font" value="0"/>
+            <enum name="local_font" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>

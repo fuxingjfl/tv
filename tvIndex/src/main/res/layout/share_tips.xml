@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+>
+
+    <ImageView
+        android:id="@+id/id_shareTips_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/img_new_task_guide"/>
+    <TextView
+        android:id="@+id/id_sharetips_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_shareTips_imageview"
+        android:layout_marginLeft="100dp"
+        android:typeface="sans"
+        android:textSize="15sp"
+        android:layout_alignParentRight="true"
+        android:text="点击分享按钮,可分享到对应的平台 点击分享按钮,可分享到对应的平台点击分享按钮,可分享到对应的平台"/>
+</RelativeLayout>

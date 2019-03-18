@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">星红榜</string>
+
+    <string name="app_download">星红榜客户端下载</string>
+
+    <string name="reload">重新加载</string>
+
+    <string name="realtimeData">实时数据</string>
+    <string name="liveData">历史数据</string>
+    <string name="smartTvData">区域数据</string>
+    <string name="app">星红榜</string>
+
+    <!--地方版-->
+    <string name="local_dynamicview">收视动态</string>
+    <string name="local_mychannel">我的频道</string>
+    <string name="local_myprogram">我的节目</string>
+
+    <string name="localxhb">星红榜区域版</string>
+
+    <string name="help">帮&#160;&#160;助</string>
+    <string name="about">关&#160;&#160;于</string>
+    <string name="my">用户中心</string>
+    <string name="login">登&#160;&#160;录</string>
+    <string name="enter">立&#160;即&#160;体&#160;验</string>
+    <string name="user">用户中心</string>
+    <string name="contact">联系方式</string>
+
+
+    <string name="aboutUI">&#160;&#160;&#160;&#160;此版本适用于Android4.0及以上的Android手机,其它Android设备使用本软件,出现的任何问题,星红桉不承担任何责任.本软件的下载、安装完全免费,使用过程中产生的数据流量费用,由运营商收取。</string>
+    <string name="about_vesion_warning">STAR-V.COM.CN&#160;&#160;版权所有</string>
+    <string name="about_vesion_warning2">Copyright©2016-2017 All   Rights Reserved</string>
+
+    <string name="networkstate">当前无网络</string>
+
+
+
+    <string name="test">&#xe606;</string>
+
+    <!--星红榜tabhost 对应的icon string-->
+    <string name="real_data">&#xe629;</string>
+    <string name="history_data">&#xe628;</string>
+    <string name="area_data">&#xe62a;</string>
+    <string name="help_icon">&#xe613;</string>
+    <string name="share_icon">&#xe60f;</string>
+    <string name="back_icon">&#xe61d;</string>
+    
+    
+    
+    <!--区域版tabhost-->
+    <string name="dynamicview_icon">&#xe60e;</string>
+    <string name="mychannel_icon">&#xe605;</string>
+    <string name="myprogram_icon">&#xe612;</string>
+    <string name="backxha_icon">&#xe615;</string>
+
+
+
+    <!--判断区域选择页面从那个页面进入的-->
+    <string name="fromKey">fromKey</string>
+    <string name="fromTabHost">fromTabHost</string>
+    <string name="fromLogin">fromLogin</string>
+    <string name="fromLocalTabhost">fromLocalTabhost</string>
+
+
+    <!--侧滑菜单 圈点-->
+    <string name="slideMenu_dot">&#xe652;</string>
+
+    <!--侧滑菜单  分享-->
+    <string name="slideMenu_share_wxcicle">&#xe626;</string>
+    <string name="slideMenu_share_wx">&#xe61e;</string>
+    <string name="slideMenu_share_qq">&#xe627;</string>
+    <string name="slideMenu_share_weibo">&#xe61b;</string>
+
+</resources>

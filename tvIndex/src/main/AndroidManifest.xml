@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.starv.tvindex">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" ></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" ></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" ></uses-permission>
+
+
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name="com.starv.tvindex.TvindexApp"
+        android:hardwareAccelerated="true"
+        >
+        <activity
+            android:name="com.starv.tvindex.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppStartLoadTranslucent"
+
+            android:hardwareAccelerated="true"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--<activity
+            android:name="com.starv.tvindex.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:hardwareAccelerated="true"/>
+
+        <activity
+            android:name="com.starv.tvindex.model.activity.TabHostActivity"
+            android:screenOrientation="portrait"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar"/>
+
+        <activity
+            android:name="com.starv.tvindex.model.activity.ShowWebViewActivity"
+            android:screenOrientation="portrait"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <activity
+            android:name="com.starv.tvindex.model.activity.GuideActivity"
+            android:screenOrientation="portrait"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <activity
+            android:name="com.starv.tvindex.model.activity.MyActivity"
+            android:screenOrientation="portrait"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <activity
+            android:name="com.starv.tvindex.model.activity.AboutActivity"
+            android:screenOrientation="portrait"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <activity
+            android:name=".model.local.module.view.activity.LocalXhbTabActivity"
+            android:screenOrientation="portrait"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <activity
+            android:name=".model.local.module.view.activity.MyWebActivity"
+            android:screenOrientation="portrait"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.NoTitleBar"/>
+
+        <activity
+            android:name=".model.local.module.view.activity.LoginPageActivity_cancle"
+            android:screenOrientation="portrait"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <activity
+            android:name=".model.local.module.view.activity.LoginPageActivity"
+            android:screenOrientation="portrait"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <activity
+            android:name=".model.local.module.view.activity.ChoiceAreaActivity"
+            android:screenOrientation="portrait"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+
+        -->
+
+        <meta-data
+            android:name="VersionKey"
+            android:value="50210f0be5894dd7bb72b3a3591969c7" />
+
+        <activity android:name=".activity.MainActivity"
+            android:theme="@style/common_app_Theme"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".activity.ApplicationScenarioActivity"
+            android:theme="@style/common_app_Theme"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.VarietyDetailsActivity"
+            android:theme="@style/common_app_Theme"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.RealTimeDataActivity"
+            android:theme="@style/common_app_Theme"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".activity.ShareActivity"
+            android:theme="@style/common_app_Theme"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.DiagramActivity"
+            android:theme="@style/common_app_Theme"
+            android:screenOrientation="portrait"></activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!--tencent1104646053-->
+
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.starv.tvindex.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+
+        <receiver android:name="com.starv.version.UpdataBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+                <!--<action android:name="android.intent.action.PACKAGE_INSTALL" />-->
+            </intent-filter>
+        </receiver>
+
+        <!-- 微信分享回调 -->
+       <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <data android:scheme="tencent1105371865" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+<!--
+            &lt;!&ndash; 调用新浪原生SDK，需要注册的回调activity &ndash;&gt;
+-->        <intent-filter>
+            <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+
+        </activity>
+
+        <meta-data android:name="Mob-AppKey" android:value="2a70ae68587b8"/>
+        <meta-data android:name="Mob-AppSecret" android:value="b360549b878cd024412e145e27c43755"/>
+
+
+
+    </application>
+
+</manifest>

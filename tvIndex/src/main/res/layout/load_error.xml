@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        >
+        <ImageView
+            android:id="@+id/id_error_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+
+            />
+        <TextView
+            android:id="@+id/id_error_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数据加载失败!!!"
+            android:layout_below="@id/id_error_img"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            />
+        <Button
+            android:id="@+id/id_reload_page"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/reload"
+            android:background="@drawable/load_error_selector"
+            android:layout_marginTop="20dp"
+            android:textColor="#8B8989"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</RelativeLayout>

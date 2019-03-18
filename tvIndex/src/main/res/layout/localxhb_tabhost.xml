@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iconF="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".model.activity.TabHostActivity">
+
+    <LinearLayout
+        android:id="@+id/id_common_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+        <include layout="@layout/common_header"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ly_loacl_tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/id_dynamicview_liner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <!--<com.beardedhen.androidbootstrap.FontAwesomeText-->
+                <!--android:id="@+id/id_dynamicview_liner_fat"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--fontawesometext:fa_icon="fa-signal" />-->
+            <com.starv.tvindex.util.view.IconView
+                android:id="@+id/id_dynamicview_liner_fat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tab_unselected"
+                android:textSize="20sp"
+                iconF:iconType="xha_font"
+                android:text="@string/dynamicview_icon" />
+            <TextView
+                android:id="@+id/id_dynamicview_liner_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/nav_font_color"
+                android:textSize="10sp"
+                android:text="@string/local_dynamicview"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_mychannel_liner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <!--<com.beardedhen.androidbootstrap.FontAwesomeText-->
+                <!--android:id="@+id/id_mychannel_liner_fat"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--fontawesometext:fa_icon="fa-film" />-->
+
+            <com.starv.tvindex.util.view.IconView
+                android:id="@+id/id_mychannel_liner_fat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tab_unselected"
+                android:textSize="20sp"
+                iconF:iconType="xha_font"
+                android:text="@string/mychannel_icon" />
+            <TextView
+                android:id="@+id/id_mychannel_liner_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/nav_font_color"
+                android:textSize="10sp"
+                android:text="@string/local_mychannel"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/id_myprogram_liner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <!--<com.beardedhen.androidbootstrap.FontAwesomeText-->
+                <!--android:id="@+id/id_myprogram_liner_fat"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--fontawesometext:fa_icon="fa-user" />-->
+            <com.starv.tvindex.util.view.IconView
+                android:id="@+id/id_myprogram_liner_fat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tab_unselected"
+                android:textSize="20sp"
+                iconF:iconType="xha_font"
+                android:text="@string/myprogram_icon" />
+
+            <TextView
+                android:id="@+id/id_myprogram_liner_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/nav_font_color"
+                android:textSize="10sp"
+                android:text="@string/local_myprogram"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/id_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <!--<ImageView-->
+                <!--android:id="@+id/id_back_fat"-->
+                <!--android:layout_width="24dp"-->
+                <!--android:layout_height="24dp"-->
+                <!--android:src="@mipmap/slidemenu_logo"/>-->
+            <com.starv.tvindex.util.view.IconView
+                android:id="@+id/id_back_fat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tab_unselected"
+                android:textSize="20sp"
+                iconF:iconType="xha_font"
+                android:text="@string/backxha_icon" />
+            <TextView
+                android:id="@+id/id_back_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/nav_font_color"
+                android:textSize="10sp"
+                android:text="返回总榜"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_above="@id/ly_loacl_tab"
+        android:background="@color/div_white" />
+
+
+    <FrameLayout
+        android:id="@+id/local_ly_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/div_tab_bar"
+        android:layout_below="@+id/id_common_header"
+        />
+
+
+</RelativeLayout>

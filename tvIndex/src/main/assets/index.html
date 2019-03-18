@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+        <title>ECharts</title>
+
+</head>
+
+<body id="layout" style="width:100%;height:100%;margin:0px; padding:0px;background:rgba(20, 8, 28, 1)">
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="height:100%;position:absolute;left:0px:right:0px;width:100%; margin:0px; padding:0px;" ></div>
+    <!-- ECharts单文件引入 -->
+    <!--
+    <script type="text/javascript">-->
+    <script src="./echarts.min.js"></script>
+    <!--<script src="http://echarts.baidu.com/build/dist/echarts.js"></script>-->
+    <script type="text/javascript">
+
+    var data = [];
+    var time = [];
+    var promptName;
+    var status;
+    var myChart = echarts.init(document.getElementById('main'));
+    function setData(ocvalue) {
+        data.push(ocvalue);
+    }
+
+    function setTime(timeStr) {
+        time.push(timeStr);
+    }
+
+    function setName(name) {
+        promptName = name;
+    }
+    function setStatus(name) {
+        status = name;
+    }
+
+    function clearData(){
+     data = []
+     time = [];
+     promptName;
+    }
+
+
+
+
+    function setOption(){
+        window.setTimeout(function(){
+                                 option = {
+                                 backgroundColor:'rgba(20, 8, 28, 1)',
+                                 grid: {
+        top: 20,
+        left:38,
+        bottom:30,
+        containLabel: true
+        },
+
+        tooltip: {
+        trigger:'item',
+        show : true,
+        axisPointer: {
+        lineStyle : {
+        color : 'red',
+        width:1
+        }
+        },
+        formatter: "{a}&nbsp&nbsp{b}<br/>{c}%",
+        backgroundColor : 'rgba(180,0,255,1)',
+        trigger: 'axis',
+        textStyle: {
+        fontSize: 10,
+        color: 'white',
+        }
+        },
+
+
+
+                               xAxis: {
+        data: time,
+        boundaryGap: false,
+        axisLabel: {
+        show: true,
+        textStyle: {
+        color: '#fff'
+        }
+        },
+        splitLine: {
+        show: true,
+        lineStyle:{
+        color: 'rgba(75,75,91,1)',
+        width: 1,
+        type: 'solid'
+        }}
+        },
+                                yAxis: {
+                                scale:'true',
+        axisLabel: {
+            formatter:function(prams){
+                return prams.toFixed(4)+"";
+            },
+        show: true,
+        textStyle: {
+        color: '#fff'
+        }},
+
+        splitLine: {
+        show: true,
+        lineStyle:{
+        color: 'rgba(75,75,91,1)',
+        width: 1,
+        type: 'solid'
+        }}
+},
+                                series: [{
+        name: promptName,
+        type: 'line',
+        data: data,
+        smooth: true ,
+        itemStyle : {
+        normal : {
+
+        color:'red'
+        }},
+
+        lineStyle:{
+        normal:{
+        color:'#fff',
+        width:1,
+}
+}
+        }]
+                                };
+
+                        myChart.setOption(option);
+
+                        myChart.getZr().on('click',function (params) {
+       //获取当前图表的option
+       var op=myChart.getOption();
+
+<!--   alert( JSON.stringify(params));-->
+       var pointInPixel= [params.offsetX, params.offsetY];
+
+       //获取当前图表的option
+       var op = myChart.getOption();
+
+       var pointInGrid = myChart.convertFromPixel({seriesIndex:0},pointInPixel);
+
+
+       //X轴序号
+       var xIndex= pointInGrid[0];
+
+       alert(xIndex)
+       AndroidWebView.getPass(xIndex)
+       });
+
+                           }, 50);
+    }
+
+
+
+
+        </script>
+</body>

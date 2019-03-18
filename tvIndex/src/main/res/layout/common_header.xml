@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
+    xmlns:iconF="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/title_style"
+    android:layout_height="50dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        >
+        <ImageView
+            android:id="@+id/id_common_header_left_img"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/header_logo"
+            android:visibility="gone"
+            />
+        <!-- 左图标 -->
+        <com.starv.tvindex.util.view.IconView
+            android:id="@+id/id_common_header_left_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            iconF:iconType="xha_font"
+            android:text="@string/back_icon"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/id_common_header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:textSize="18sp"
+        android:text="标题"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        >
+        <com.starv.tvindex.util.view.MarqueeText
+            android:id="@+id/id_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/white"
+            android:background="@drawable/area_frame"
+            android:textSize="13sp"
+            android:visibility="gone"
+            android:maxWidth="100dp"
+
+
+
+            android:text="上海"/>
+        <com.starv.tvindex.util.view.IconView
+            android:id="@+id/id_common_header_right_firsticon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:textSize="18sp"
+            android:textColor="@color/localtabhost_right"
+            iconF:iconType="xha_font"
+            android:visibility="gone"
+            android:text="@string/back_icon"/>
+        <com.starv.tvindex.util.view.IconView
+            android:id="@+id/id_common_header_right_secondicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="8dp"
+            iconF:iconType="xha_font"
+            android:textSize="18sp"
+            android:textColor="@color/localtabhost_right"
+            android:visibility="gone"
+            android:text="@string/back_icon"/>
+        <com.starv.tvindex.util.view.IconView
+            android:id="@+id/id_common_header_right_thirdicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="8dp"
+            android:textSize="18sp"
+            android:textColor="@color/localtabhost_right"
+            android:visibility="gone"
+            iconF:iconType="xha_font"
+            android:text="@string/back_icon"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

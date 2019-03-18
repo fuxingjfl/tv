@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ShareUI/ShareUI.iml" filepath="$PROJECT_DIR$/ShareUI/ShareUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SlidingMenu_library/SlidingMenu_library.iml" filepath="$PROJECT_DIR$/SlidingMenu_library/SlidingMenu_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shareSDK/shareSDK.iml" filepath="$PROJECT_DIR$/shareSDK/shareSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tv.iml" filepath="$PROJECT_DIR$/tv.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tvIndex/tvIndex.iml" filepath="$PROJECT_DIR$/tvIndex/tvIndex.iml" />
+      <module fileurl="file://$PROJECT_DIR$/version/version.iml" filepath="$PROJECT_DIR$/version/version.iml" />
+    </modules>
+  </component>
+</project>

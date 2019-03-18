@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
+    xmlns:iconF="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tabhost_bottom"
+    tools:context=".model.activity.TabHostActivity">
+
+    <LinearLayout
+        android:id="@+id/id_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+        <include layout="@layout/header"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ly_tab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/id_realData_liner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <!--<com.beardedhen.androidbootstrap.FontAwesomeText-->
+                <!--android:id="@+id/id_realData"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--fontawesometext:fa_icon="fa-bar-chart-o" />-->
+            <com.starv.tvindex.util.view.IconView
+                android:id="@+id/id_realData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tab_unselected"
+                android:textSize="20sp"
+                iconF:iconType="xha_font"
+                android:text="@string/real_data" />
+
+            <TextView
+                android:id="@+id/id_realData_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tab_unselected"
+                android:textSize="10sp"
+                android:text="@string/realtimeData"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_liveData_liner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <!--<com.beardedhen.androidbootstrap.FontAwesomeText-->
+                <!--android:id="@+id/id_liveData"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--fontawesometext:fa_icon="fa-folder-open" />-->
+            <com.starv.tvindex.util.view.IconView
+                android:id="@+id/id_liveData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tab_unselected"
+                android:textSize="20sp"
+                iconF:iconType="xha_font"
+                android:text="@string/history_data" />
+
+            <TextView
+                android:id="@+id/id_liveData_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tab_unselected"
+                android:textSize="10sp"
+                android:text="@string/liveData"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/id_smartTv_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <!--<com.beardedhen.androidbootstrap.FontAwesomeText-->
+                <!--android:id="@+id/id_smartTv"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--fontawesometext:fa_icon="fa-qrcode" />-->
+            <com.starv.tvindex.util.view.IconView
+                android:id="@+id/id_smartTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tab_unselected"
+                android:textSize="20sp"
+                iconF:iconType="xha_font"
+                android:text="@string/area_data" />
+
+            <TextView
+                android:id="@+id/id_smartTv_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tab_unselected"
+                android:textSize="10sp"
+                android:text="@string/smartTvData"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_above="@id/ly_tab_menu"
+        android:background="@color/div_white" />
+
+
+    <FrameLayout
+        android:id="@+id/ly_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/div_tab_bar"
+        android:layout_below="@+id/id_header"
+        />
+
+
+</RelativeLayout>
